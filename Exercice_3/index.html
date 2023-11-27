@@ -6,15 +6,24 @@
 </head>
 <body>
   <form>
-    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" />
+    <label for="lastname">Votre nom  : </label><input type="text" name="test" onkeyup="recupValeur(this.value);" />
+    
   </form>
-  <script>var reponse = prompt("Comment t'appelles-tu ?", "Entrez ici votre prénom");
-    if( reponse == null ){
-      alert("Vous avez cliqué sur Annuler");
-    } else {
-      alert("Bonjour " + reponse + ", ça roule ?");
-    }
-    Résultat
+  <script>
+document.getElementById("lastname");
+
+
+
+addEventListener("keydown", (event) => {
+
+  
+
+        let touche = event.key;
+        
+        
+        alert(touche);
+        
+        })
 </script>
 </body>
 </html>

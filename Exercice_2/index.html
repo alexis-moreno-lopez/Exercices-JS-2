@@ -6,10 +6,12 @@
 </head>
 <body>
   <form>
-    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+    <label for="lastname">Votre nom  : </label><input type="text" onblur="champ()" name="lastname" id="lastname"/>
   </form>
   <script>
-    alert("Merci de votre participation")
+     function champ (){
+       alert('merci de votre participation');
+     }
   </script>
 </body>
 </html>
